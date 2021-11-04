@@ -20,6 +20,7 @@ class Car extends Vehicle
 
     public function getEnergy(): string
     {
+        
         return $this->energy;
     }
 
@@ -34,6 +35,7 @@ class Car extends Vehicle
 
     public function getEnergyLevel(): int
     {
+        
         return $this->energyLevel;
     }
 
