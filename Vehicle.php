@@ -21,6 +21,7 @@ class Vehicle
     public function forward(): string
     {
         $this->currentSpeed = 15;
+     
         return "Go !";
     }
 
@@ -33,6 +34,7 @@ class Vehicle
         }
 
         $sentence .= "I'm stopped !";
+     
         return $sentence;
     }
 
