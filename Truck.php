@@ -9,40 +9,40 @@ class Truck extends Vehicle
     private string $energy;
 
     public function __construct(string $color, int $nbSeats, string $energy, int $stockCapacity)
-        {
-            parent::__construct($color, $nbSeats);
-            $this->energy = $energy;
-            $this->setStockCapacity($stockCapacity);
-        }
+    {
+        parent::__construct($color, $nbSeats);
+        $this->energy = $energy;
+        $this->setStockCapacity($stockCapacity);
+    }
     public function getEnergy(): string
-        {
-            return $this->energy;
-        }
+    {
+        return $this->energy;
+    }
     public function setEnergy(string $energy)
-        {
-            $this->energy = $energy;
+    {
+        $this->energy = $energy;
             return $this;
-        }
+    }
     public function getStockCapacity(): int
-        {
-            return $this->stockCapacity;
-        }
+    {
+        return $this->stockCapacity;
+    }
     public function setStockCapacity(int $stockCapacity)
-        {
-            $this->stockCapacity = $stockCapacity;
-        }
+    {
+        $this->stockCapacity = $stockCapacity;
+    }
     public function getLoading()
-        {
-            return $this->loading;
-        }
+    {
+        return $this->loading;
+    }
     public function setLoading(int $loading)
-        {
-            $this->loading = $loading;
-            return $this;
-        }
+    {
+        $this->loading = $loading;
+        return $this;
+    }
     public function isFull(): string
-        {
-            if ($this->loading == $this->stockCapacity)
+    {
+        if ($this->loading == $this->stockCapacity)
             {
                 return 'full';
             }
@@ -50,7 +50,7 @@ class Truck extends Vehicle
             {
                 return 'in filling';
             }
-        }
+     }
 
 }
 
